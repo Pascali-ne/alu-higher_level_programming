@@ -1,14 +1,23 @@
 #!/usr/bin/python3
-"""Adds two numbers"""
+"""Defines an integer addition function."""
+
+'''
+File_name: 0-add_integer.py
+Created: 30-NOV-2023
+Author: UMUTONI Kevine (simplykevine)
+Project name:python-test_driven_development
+'''
 
 
 def add_integer(a, b=98):
-    """
-    Returns sum of a and b
-    - Args :
-        a: int or float
-        b: int or float, default 98
-    """
+    ''' Function that adds two integers
+    Args:
+        a : this must be either an integer or float
+        b : Must be either an integer or float, and if not provided
+            it takes the defualt value of 98
+    Returns:
+        an integer: the addition of a and b
+    '''
     if type(a) == float or type(b) == float:
         a = int(a)
         b = int(b)
